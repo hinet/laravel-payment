@@ -11,7 +11,7 @@
 ## Installing
 
 ```shell
-$ composer require overtrue/laravel-payment -v
+$ composer require Hinet/laravel-payment
 ```
 
 After updated composer, if you are using laravel version < 5.5, you need to register service provider: 
@@ -21,14 +21,14 @@ After updated composer, if you are using laravel version < 5.5, you need to regi
 
     'providers' => [
         //...
-        Overtrue\LaravelPayment\ServiceProvider::class,
+        Hinet\LaravelPayment\ServiceProvider::class,
     ],
 ```
 
 And publish the config file: 
 
 ```shell
-$ php artisan vendor:publish --provider=Overtrue\\LaravelPayment\\ServiceProvider
+$ php artisan vendor:publish --provider=Hinet\\LaravelPayment\\ServiceProvider
 ```
 
 if you want to use facade mode, you can register a facade name what you want to use, for example `LaravelPayment`:
@@ -37,7 +37,7 @@ if you want to use facade mode, you can register a facade name what you want to 
 // config/app.php
 
     'aliases' => [
-        'LaravelPayment' => Overtrue\LaravelPayment\Facade::class, // This is default in laravel 5.5
+        'LaravelPayment' => Hinet\LaravelPayment\Facade::class, // This is default in laravel 5.5
     ],
 ```
 
