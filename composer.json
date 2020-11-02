@@ -1,5 +1,5 @@
 {
-    "name": "overtrue/laravel-payment",
+    "name": "hinet/laravel-payment",
     "description": "Omnipay ServiceProvider for Laravel.",
     "type": "library",
     "require": {
@@ -9,8 +9,8 @@
         "league/omnipay": "^3.0"
     },
     "require-dev": {
-        "mockery/mockery": "^0.9.9 || ^1.0.0",
-        "phpunit/phpunit": "~6.5 || ^7.0 ",
+        "mockery/mockery": "^0.9.9||^1.0.0",
+        "phpunit/phpunit": "~6.5||^7.0 ",
         "overtrue/phplint": "dev-master"
     },
     "autoload": {
