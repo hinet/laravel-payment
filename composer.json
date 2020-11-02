@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Overtrue\\LaravelPayment\\":"./src"
+            "Hinet\\LaravelPayment\\":"./src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Overtrue\\LaravelPayment\\Tests\\": "./tests",
+            "Hinet\\LaravelPayment\\Tests\\": "./tests",
             "Omnipay\\": "./tests/Omnipay"
         }
     },
@@ -38,10 +38,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Overtrue\\LaravelPayment\\ServiceProvider"
+                "Hinet\\LaravelPayment\\ServiceProvider"
             ],
             "aliases": {
-                "LaravelPayment": "Overtrue\\LaravelPayment\\Facade"
+                "LaravelPayment": "Hinet\\LaravelPayment\\Facade"
             }
         }
     },
