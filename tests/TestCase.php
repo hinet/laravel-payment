@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Overtrue\LaravelPayment\Tests;
+namespace Hinet\LaravelPayment\Tests;
 
 /**
  * Class TestCase.

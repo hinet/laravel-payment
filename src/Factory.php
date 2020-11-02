@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the overtrue/laravel-payment.
+ * This file is part of the hinet/laravel-payment.
  *
  * (c) overtrue <i@overtrue.me>
  *
@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Overtrue\LaravelPayment;
+namespace Hinet\LaravelPayment;
 
 use Omnipay\Common\GatewayInterface;
 use Omnipay\Omnipay;

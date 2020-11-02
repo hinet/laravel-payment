@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the overtrue/laravel-payment.
+ * This file is part of the hinet/laravel-payment.
  *
  * (c) overtrue <i@overtrue.me>
  *
@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Overtrue\LaravelPayment\Tests;
+namespace Hinet\LaravelPayment\Tests;
 
 use Omnipay\Common\GatewayInterface;
-use Overtrue\LaravelPayment\Factory;
+use Hinet\LaravelPayment\Factory;
 
 /**
  * Class FactoryTest.
@@ -31,12 +31,12 @@ class FactoryTest extends TestCase
         // snake case
         $gateway = Factory::make('LaravelPayment_Test', [
             'test_mode' => true,
-            'username' => 'overtrue',
+            'username' => 'hinet',
         ]);
 
         $this->assertSame([
             'testMode' => true,
-            'username' => 'overtrue',
+            'username' => 'hinet',
         ], $gateway->getParameters());
 
         // snake case

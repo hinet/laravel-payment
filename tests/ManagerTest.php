@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the overtrue/laravel-payment.
+ * This file is part of the hinet/laravel-payment.
  *
  * (c) overtrue <i@overtrue.me>
  *
@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Overtrue\LaravelPayment\Tests;
+namespace Hinet\LaravelPayment\Tests;
 
 use Omnipay\Common\GatewayInterface;
 use Omnipay\LaravelPayment\TestGateway;
-use Overtrue\LaravelPayment\Manager;
+use Hinet\LaravelPayment\Manager;
 
 /**
  * Class ManagerTest.
@@ -29,7 +29,7 @@ class ManagerTest extends TestCase
                 'foo' => [
                     'driver' => 'LaravelPayment_Test',
                     'options' => [
-                        'username' => 'overtrue',
+                        'username' => 'hinet',
                         'test_mode' => true,
                     ],
                 ],
@@ -46,7 +46,7 @@ class ManagerTest extends TestCase
             'gateways' => [
                 'foo' => [
                     'options' => [
-                        'username' => 'overtrue',
+                        'username' => 'hinet',
                         'test_mode' => true,
                     ],
                 ],
@@ -66,7 +66,7 @@ class ManagerTest extends TestCase
                 'foo' => [
                     'driver' => 'LaravelPayment_Test',
                     'options' => [
-                        'username' => 'overtrue',
+                        'username' => 'hinet',
                         'test_mode' => true,
                     ],
                 ],
@@ -83,7 +83,7 @@ class ManagerTest extends TestCase
                 'foo' => [
                     'driver' => 'LaravelPayment_Test',
                     'options' => [
-                        'username' => 'overtrue',
+                        'username' => 'hinet',
                         'test_mode' => true,
                     ],
                 ],
@@ -103,7 +103,7 @@ class ManagerTest extends TestCase
                 'foo' => [
                     'driver' => 'LaravelPayment_Test',
                     'options' => [
-                        'username' => 'overtrue',
+                        'username' => 'hinet',
                         'test_mode' => true,
                     ],
                 ],
@@ -111,7 +111,7 @@ class ManagerTest extends TestCase
         ]);
 
         $this->assertSame([
-            'username' => 'overtrue',
+            'username' => 'hinet',
             'testMode' => true,
         ], $manager->getParameters());
     }

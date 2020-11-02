@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Overtrue\LaravelPayment;
+namespace Hinet\LaravelPayment;
 
 use Illuminate\Support\Facades\Facade as LaravelFacade;
 

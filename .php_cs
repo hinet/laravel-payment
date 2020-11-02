@@ -1,6 +1,6 @@
 <?php
 $header = <<<EOF
-This file is part of the overtrue/laravel-payment.
+This file is part of the hinet/laravel-payment.
 
 (c) overtrue <i@overtrue.me>
 
